@@ -1,0 +1,35 @@
+.Menu{
+    display: flex;
+    flex-basis: 250px;
+    
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, rgb(195, 20, 50), rgb(36, 11, 54));
+    }
+
+.Menu nav{
+    flex: 1;
+}
+
+.Menu ul {
+    list-style: none;   
+    padding: 0;
+}
+
+.Menu li {
+    display: flex;
+
+}
+
+.Menu li a {
+    flex: 1;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.Menu li a:hover{
+    background: #00000040;
+}
