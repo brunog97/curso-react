@@ -1,14 +1,16 @@
 import React, {Component} from 'react'
-import axios from 'axios'
+//import axios from 'axios'
 
 import PageHeader from '../template/pageHeader'
 import TodoForm from './todoForm'
 import TodoList from './todoList'
 
-const URL = 'http://localhost:3003/api/todos'
+//const URL = 'http://localhost:3003/api/todos'
 
 export default class Todo extends Component {
 
+
+    /*
     constructor(props){
         super(props)
         this.state = {description: '', list: []}
@@ -75,22 +77,24 @@ export default class Todo extends Component {
     handleClear(){
         this.refresh()
     }
-    
+    */
     render(){
         return(
             <div>
                <PageHeader name='Tarefas' small='Cadastro'/>
-               <TodoForm description={this.state.description} 
+               <TodoForm  />
+{/*                
+                description={this.state.description} 
                handleChange={this.handleChange}
                handleAdd={this.handleAdd}
                handleSearch={this.handleSearch}
-               handleClear={this.handleClear}/>
-
-               <TodoList list={this.state.list} 
+               handleClear={this.handleClear}/> */}
+                <TodoList/>
+               {/* <TodoList list={this.state.list} 
                 handleRemove={this.handleRemove}
                 handleMarkAsDone={this.handleMarkAsDone}
-                handleMarkAsPending={this.handleMarkAsPending}
-               />
+                handleMarkAsPending={this.handleMarkAsPending} />*/}
+               
             </div>
             
         )
